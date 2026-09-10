@@ -1,0 +1,48 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  skill:
+    name: Skill 结构与链接
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 校验 skill frontmatter、相对链接、README 图片
+        run: node scripts/validate-skill.mjs
+
+  svg:
+    name: SVG 可渲染
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 检查所有 SVG 是合法 XML
+        run: |
+          python3 - <<'PY'
+          import glob, sys, xml.dom.minidom
+          files = sorted(glob.glob('assets/**/*.svg', recursive=True))
+          if not files:
+              print('::warning::未找到任何 SVG'); sys.exit(0)
+          bad = []
+          for p in files:
+              try:
+                  xml.dom.minidom.parse(p)
+                  print('well-formed:', p)
+              except Exception as e:
+                  bad.append(f'{p}: {e}')
+          if bad:
+              print('\n'.join(bad)); sys.exit(1)
+          PY

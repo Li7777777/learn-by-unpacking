@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 712" width="1160" height="712" role="img" aria-label="learn-by-unpacking 工作流程图">
+  <title>learn-by-unpacking 工作流程</title>
+  <desc>五步主流程产出三件套，三件套驱动每日伴读循环与全量复习日。</desc>
+
+  <defs>
+    <style>
+      .h { font: 700 17px "Nunito Sans","PingFang SC","Microsoft YaHei",system-ui,sans-serif; fill:#e9eff7; }
+      .t { font: 600 15px "Nunito Sans","PingFang SC","Microsoft YaHei",system-ui,sans-serif; fill:#e9eff7; }
+      .s { font: 400 12.5px "Nunito Sans","PingFang SC","Microsoft YaHei",system-ui,sans-serif; fill:#a8b8ca; }
+      .cap { font: 700 13px "Nunito Sans","PingFang SC","Microsoft YaHei",system-ui,sans-serif; fill:#7f92a8; letter-spacing:.08em; }
+      .mono { font: 500 12.5px "JetBrains Mono",Consolas,monospace; fill:#cfdae7; }
+      .card { fill:#1a2432; stroke:#31415a; stroke-width:1.5; rx:12; }
+      .arrow { stroke:#6f8299; stroke-width:2; fill:none; marker-end:url(#a); }
+      .arrowb { stroke:#a78bfa; stroke-width:2.4; fill:none; marker-end:url(#ap); }
+    </style>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6f8299"/>
+    </marker>
+    <marker id="ap" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#a78bfa"/>
+    </marker>
+    <filter id="sh" x="-8%" y="-8%" width="116%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000000" flood-opacity=".45"/>
+    </filter>
+  </defs>
+
+  <rect width="1160" height="712" fill="#0d1420"/>
+
+  <!-- ===== Band A : 主流程 ===== -->
+  <text class="cap" x="28" y="34">MAIN WORKFLOW · 五步</text>
+
+  <g filter="url(#sh)">
+    <rect class="card" x="28"  y="50" width="168" height="96" rx="12"/>
+    <rect class="card" x="224" y="50" width="168" height="96" rx="12"/>
+    <rect class="card" x="420" y="50" width="168" height="96" rx="12"/>
+    <rect class="card" x="616" y="50" width="168" height="96" rx="12"/>
+    <rect class="card" x="812" y="50" width="168" height="96" rx="12"/>
+  </g>
+  <rect x="28"  y="50" width="168" height="5" rx="2.5" fill="#60a5fa"/>
+  <rect x="224" y="50" width="168" height="5" rx="2.5" fill="#a78bfa"/>
+  <rect x="420" y="50" width="168" height="5" rx="2.5" fill="#fbbf24"/>
+  <rect x="616" y="50" width="168" height="5" rx="2.5" fill="#34d399"/>
+  <rect x="812" y="50" width="168" height="5" rx="2.5" fill="#f87171"/>
+
+  <text class="t"  x="112"  y="82" text-anchor="middle">输入</text>
+  <text class="s"  x="112"  y="103" text-anchor="middle">技术主题</text>
+  <text class="s"  x="112"  y="121" text-anchor="middle">或代码仓库</text>
+
+  <text class="t"  x="308" y="82" text-anchor="middle">① 确认输入</text>
+  <text class="s"  x="308" y="103" text-anchor="middle">主题 · 模式 · 范围</text>
+  <text class="s"  x="308" y="121" text-anchor="middle">每日时长 · 天数</text>
+
+  <text class="t"  x="504" y="82" text-anchor="middle">② 章节规划</text>
+  <text class="mono" x="504" y="104" text-anchor="middle">ceil(总时长÷每日)</text>
+  <text class="s"  x="504" y="123" text-anchor="middle">→ 推荐天数</text>
+
+  <text class="t"  x="700" y="82" text-anchor="middle">③ 准备素材</text>
+  <text class="s"  x="700" y="103" text-anchor="middle">知识边界拆解</text>
+  <text class="s"  x="700" y="121" text-anchor="middle">/ 源码覆盖 100%</text>
+
+  <text class="t"  x="896" y="82" text-anchor="middle">④ 生成 · ⑤ 自检</text>
+  <text class="s"  x="896" y="103" text-anchor="middle">写出三件套</text>
+  <text class="s"  x="896" y="121" text-anchor="middle">逐项核对清单</text>
+
+  <path class="arrow" d="M196 98 H222"/>
+  <path class="arrow" d="M392 98 H418"/>
+  <path class="arrow" d="M588 98 H614"/>
+  <path class="arrow" d="M784 98 H810"/>
+
+  <g>
+    <rect x="592" y="160" width="216" height="46" rx="9" fill="#2a1f0b" stroke="#7c4a1a" stroke-width="1.4"/>
+    <text class="s" x="700" y="180" text-anchor="middle" fill="#fbbf24">硬门槛：覆盖率未达 100%</text>
+    <text class="s" x="700" y="196" text-anchor="middle" fill="#fbbf24">禁止开始写教程正文</text>
+    <path class="arrow" d="M700 146 V158" stroke="#fbbf24"/>
+  </g>
+  <g>
+    <rect x="788" y="160" width="216" height="46" rx="9" fill="#2b1518" stroke="#7a2d33" stroke-width="1.4"/>
+    <text class="s" x="896" y="180" text-anchor="middle" fill="#fca5a5">不编造行号 / 命令 / 数字</text>
+    <text class="s" x="896" y="196" text-anchor="middle" fill="#fca5a5">无法核实 → 标记「待核实」</text>
+    <path class="arrow" d="M896 146 V158" stroke="#f87171"/>
+  </g>
+
+  <!-- ===== Band B : 三件套 ===== -->
+  <text class="cap" x="28" y="252">DELIVERABLES · 三件套互相引用，章节与天数口径一致</text>
+
+  <path class="arrowb" d="M908 206 V262"/>
+  <path class="arrowb" d="M908 262 H212 V272"/>
+
+  <g filter="url(#sh)">
+    <rect class="card" x="60"  y="276" width="320" height="126" rx="12"/>
+    <rect class="card" x="420" y="276" width="320" height="126" rx="12"/>
+    <rect class="card" x="780" y="276" width="320" height="126" rx="12"/>
+  </g>
+  <rect x="60"  y="276" width="320" height="34" rx="12" fill="#17263d"/>
+  <rect x="60"  y="298" width="320" height="12" fill="#17263d"/>
+  <rect x="420" y="276" width="320" height="34" rx="12" fill="#1f1b38"/>
+  <rect x="420" y="298" width="320" height="12" fill="#1f1b38"/>
+  <rect x="780" y="276" width="320" height="34" rx="12" fill="#102a22"/>
+  <rect x="780" y="298" width="320" height="12" fill="#102a22"/>
+
+  <text class="mono" x="220" y="299" text-anchor="middle">教程-&lt;主题&gt;.md</text>
+  <text class="mono" x="580" y="299" text-anchor="middle">伴读提示词-&lt;主题&gt;.md</text>
+  <text class="mono" x="940" y="299" text-anchor="middle">学习记录-&lt;主题&gt;.md</text>
+
+  <text class="s" x="220" y="330" text-anchor="middle">分章正文 · 是什么→怎么做→为什么</text>
+  <text class="s" x="220" y="350" text-anchor="middle">每章 ≥4 种图文手段 · 关键行号索引</text>
+  <text class="s" x="220" y="370" text-anchor="middle">易混对照表 · 可迁移方法</text>
+
+  <text class="s" x="580" y="330" text-anchor="middle">资深伴读导师角色 · 按天材料清单</text>
+  <text class="s" x="580" y="350" text-anchor="middle">阶段 A/B/C/D · 每日 7 题</text>
+  <text class="s" x="580" y="370" text-anchor="middle">0~10 评分 · 绿/黄/红掌握画像</text>
+
+  <text class="s" x="940" y="330" text-anchor="middle">每日计划表 · 压缩笔记</text>
+  <text class="s" x="940" y="350" text-anchor="middle">成绩表 · 疑问清单 · 错题复盘</text>
+  <text class="s" x="940" y="370" text-anchor="middle">串联图留白 · 结课确认清单</text>
+
+  <text class="s" x="580" y="422" text-anchor="middle" fill="#7f92a8">复制 --- 提示词开始 / 结束 --- 之间的内容到新对话</text>
+
+  <!-- ===== Band C : 每日循环 ===== -->
+  <text class="cap" x="28" y="476">DAILY LOOP · 每一天的执行节奏（来自伴读提示词）</text>
+
+  <path class="arrow" d="M220 402 V502"/>
+  <path class="arrow" d="M580 402 V502"/>
+  <path class="arrow" d="M940 402 V502"/>
+
+  <g filter="url(#sh)">
+    <rect x="60" y="506" width="620" height="152" rx="12" fill="#141d29" stroke="#31415a" stroke-width="1.5"/>
+    <rect x="710" y="506" width="390" height="152" rx="12" fill="#1e1a10" stroke="#4a4020" stroke-width="1.5"/>
+  </g>
+
+  <text class="t" x="80" y="532">阶段 A → B → C → D</text>
+
+  <g>
+    <rect x="80"  y="548" width="120" height="40" rx="8" fill="#1a2432" stroke="#3b3f6b" stroke-width="1.4"/>
+    <rect x="212" y="548" width="140" height="40" rx="8" fill="#1a2432" stroke="#3b3f6b" stroke-width="1.4"/>
+    <rect x="364" y="548" width="196" height="40" rx="8" fill="#1a2432" stroke="#3b3f6b" stroke-width="1.4"/>
+    <rect x="572" y="548" width="88" height="40" rx="8" fill="#1a2432" stroke="#3b3f6b" stroke-width="1.4"/>
+  </g>
+  <text class="s" x="140" y="566" text-anchor="middle">导读</text>
+  <text class="s" x="140" y="581" text-anchor="middle">独立阅读</text>
+  <text class="s" x="282" y="566" text-anchor="middle">结构化讲解</text>
+  <text class="s" x="282" y="581" text-anchor="middle">开放式追问</text>
+  <text class="s" x="462" y="566" text-anchor="middle">7 题考察</text>
+  <text class="s" x="462" y="581" text-anchor="middle">概念2 源码2 设计2 综合1</text>
+  <text class="s" x="616" y="566" text-anchor="middle">填写记录</text>
+  <text class="s" x="616" y="581" text-anchor="middle">错题复盘</text>
+
+  <path class="arrow" d="M200 568 H210"/>
+  <path class="arrow" d="M352 568 H362"/>
+  <path class="arrow" d="M560 568 H570"/>
+  <path d="M616 588 Q616 630 462 630 Q140 630 140 590" fill="none" stroke="#6f8299" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#a)"/>
+  <text class="s" x="370" y="650" text-anchor="middle" fill="#7f92a8">每章约 5 个来回，先听回答再点评 —— 小步推进，不一次性灌输</text>
+
+  <text class="t" x="730" y="532">复习日 · 不计入公式</text>
+  <text class="s" x="730" y="556">· 薄弱点回看（指向具体章节）</text>
+  <text class="s" x="730" y="576">· 错题重考，≥7 分过关</text>
+  <text class="s" x="730" y="596">· 每章一题 · 全景图串讲</text>
+  <text class="s" x="730" y="616">· 易混概念对答 · 结课清单</text>
+  <text class="s" x="730" y="638" fill="#d9b64a">绿色 ≥8 · 黄色 5~7 · 红色 ≤3</text>
+
+  <path class="arrow" d="M680 578 H708"/>
+
+  <text class="s" x="28" y="690" fill="#5d6f83">learn-by-unpacking · 教程 × 伴读 × 学习记录 三件套 —— 协议见 skills/learn-by-unpacking/SKILL.md</text>
+</svg>
