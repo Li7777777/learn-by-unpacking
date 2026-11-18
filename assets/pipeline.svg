@@ -44,8 +44,8 @@
   <rect x="812" y="50" width="168" height="5" rx="2.5" fill="#ef4444"/>
 
   <text class="t"  x="112"  y="82" text-anchor="middle">输入</text>
-  <text class="s"  x="112"  y="103" text-anchor="middle">技术主题</text>
-  <text class="s"  x="112"  y="121" text-anchor="middle">或代码仓库</text>
+  <text class="s"  x="112"  y="103" text-anchor="middle">学习主题</text>
+  <text class="s"  x="112"  y="121" text-anchor="middle">或任意学习材料</text>
 
   <text class="t"  x="308" y="82" text-anchor="middle">① 确认输入</text>
   <text class="s"  x="308" y="103" text-anchor="middle">主题 · 模式 · 范围</text>
@@ -57,7 +57,7 @@
 
   <text class="t"  x="700" y="82" text-anchor="middle">③ 准备素材</text>
   <text class="s"  x="700" y="103" text-anchor="middle">知识边界拆解</text>
-  <text class="s"  x="700" y="121" text-anchor="middle">/ 源码覆盖 100%</text>
+  <text class="s"  x="700" y="121" text-anchor="middle">或材料精读</text>
 
   <text class="t"  x="896" y="82" text-anchor="middle">④ 生成 · ⑤ 自检</text>
   <text class="s"  x="896" y="103" text-anchor="middle">写出三件套</text>
@@ -71,13 +71,13 @@
   <!-- gate callout under step 3 -->
   <g>
     <rect x="592" y="160" width="216" height="46" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.4"/>
-    <text class="s" x="700" y="180" text-anchor="middle" fill="#9a3412">硬门槛：覆盖率未达 100%</text>
-    <text class="s" x="700" y="196" text-anchor="middle" fill="#9a3412">禁止开始写教程正文</text>
+    <text class="s" x="700" y="180" text-anchor="middle" fill="#9a3412">精读范围覆盖率达到 100%</text>
+    <text class="s" x="700" y="196" text-anchor="middle" fill="#9a3412">后开始写精读教程正文</text>
     <path class="arrow" d="M700 146 V158" stroke="#f59e0b"/>
   </g>
   <g>
     <rect x="788" y="160" width="216" height="46" rx="9" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.4"/>
-    <text class="s" x="896" y="180" text-anchor="middle" fill="#991b1b">不编造行号 / 命令 / 数字</text>
+    <text class="s" x="896" y="180" text-anchor="middle" fill="#991b1b">事实、引文与定位可核查</text>
     <text class="s" x="896" y="196" text-anchor="middle" fill="#991b1b">无法核实 → 标记「待核实」</text>
     <path class="arrow" d="M896 146 V158" stroke="#ef4444"/>
   </g>
@@ -104,8 +104,8 @@
   <text class="mono" x="580" y="299" text-anchor="middle">伴读提示词-&lt;主题&gt;.md</text>
   <text class="mono" x="940" y="299" text-anchor="middle">学习记录-&lt;主题&gt;.md</text>
 
-  <text class="s" x="220" y="330" text-anchor="middle">分章正文 · 是什么→怎么做→为什么</text>
-  <text class="s" x="220" y="350" text-anchor="middle">每章 ≥4 种图文手段 · 关键行号索引</text>
+  <text class="s" x="220" y="330" text-anchor="middle">分章正文 · 理解、运用与依据</text>
+  <text class="s" x="220" y="350" text-anchor="middle">每章 ≥4 种图文手段 · 材料索引</text>
   <text class="s" x="220" y="370" text-anchor="middle">易混对照表 · 可迁移方法</text>
 
   <text class="s" x="580" y="330" text-anchor="middle">资深伴读导师角色 · 按天材料清单</text>
@@ -143,7 +143,7 @@
   <text class="s" x="282" y="566" text-anchor="middle">结构化讲解</text>
   <text class="s" x="282" y="581" text-anchor="middle">开放式追问</text>
   <text class="s" x="462" y="566" text-anchor="middle">7 题考察</text>
-  <text class="s" x="462" y="581" text-anchor="middle">概念2 源码2 设计2 综合1</text>
+  <text class="s" x="462" y="581" text-anchor="middle">概念2 材料2 应用2 综合1</text>
   <text class="s" x="616" y="566" text-anchor="middle">填写记录</text>
   <text class="s" x="616" y="581" text-anchor="middle">错题复盘</text>
 
@@ -151,14 +151,14 @@
   <path class="arrow" d="M352 568 H362"/>
   <path class="arrow" d="M560 568 H570"/>
   <path d="M616 588 Q616 630 462 630 Q140 630 140 590" fill="none" stroke="#96a6b8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#a)"/>
-  <text class="s" x="370" y="650" text-anchor="middle" fill="#7b8a9c">每章约 5 个来回，先听回答再点评 —— 小步推进，不一次性灌输</text>
+  <text class="s" x="370" y="650" text-anchor="middle" fill="#7b8a9c">每章约 3~5 轮，先听回答再点评，按理解情况调整</text>
 
   <text class="t" x="730" y="532">复习日 · 不计入公式</text>
   <text class="s" x="730" y="556">· 薄弱点回看（指向具体章节）</text>
   <text class="s" x="730" y="576">· 错题重考，≥7 分过关</text>
   <text class="s" x="730" y="596">· 每章一题 · 全景图串讲</text>
   <text class="s" x="730" y="616">· 易混概念对答 · 结课清单</text>
-  <text class="s" x="730" y="638" fill="#a16207">绿色 ≥8 · 黄色 5~7 · 红色 ≤3</text>
+  <text class="s" x="730" y="638" fill="#a16207">绿色 8~10 · 黄色 5~7 · 红色 0~4</text>
 
   <path class="arrow" d="M680 578 H708"/>
 
